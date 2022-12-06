@@ -11,15 +11,17 @@ const routes: Routes = [
   },
   {
     path: 'inpaint',
-    component: InpaintComponent
+    redirectTo: ''
   },
   {
     path: 'batch-inpaint',
-    component: BatchInpaintComponent
+    redirectTo: ''
+    // component: BatchInpaintComponent
   },
   {
     path: 'about',
-    component: AboutComponent
+    redirectTo: ''
+    // component: AboutComponent
   },
 ];
 

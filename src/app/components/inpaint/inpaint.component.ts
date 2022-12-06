@@ -17,6 +17,7 @@ export class InpaintComponent {
       var r = new FileReader();
       r.readAsDataURL(event.target.files[0])
       r.onload=(e:any)=>{
+        console.log(e.target.result)
         this.srcInput = e.target.result;
       }
     }
