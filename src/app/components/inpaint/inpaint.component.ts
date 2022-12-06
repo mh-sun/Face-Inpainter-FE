@@ -17,9 +17,18 @@ export class InpaintComponent {
       var r = new FileReader();
       r.readAsDataURL(event.target.files[0])
       r.onload=(e:any)=>{
-        console.log(e.target.result)
+        // console.log(e.target.result)
         this.srcInput = e.target.result;
       }
     }
+  }
+
+  onInpaintClick(){
+    this.changeImage(this.srcInput)
+
+  }
+  changeImage(img:any){
+    this.srcOutput = img
+    document.getElementById('output')?.classList.remove('rotate')
   }
 }
